@@ -25,11 +25,11 @@ app.use((req, res, next) => {
     next();
 });
 //This code will make code defined after this not show
-app.use((req, res, next) => {
+// app.use((req, res, next) => {
 
-    res.render('maintenance.hbs');
+//     res.render('maintenance.hbs');
     
-});
+// });
 
 app.use(express.static(__dirname + '/public'));
 
@@ -60,6 +60,14 @@ app.get('/about', (req, res) => {
     });
     
 
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageName: 'Portfolio',
+        currentYear: new Date().getFullYear(),
+        welcomeName: 'Nicolas'
+    });
 });
 
 // /bad - send back json with errorMessage
