@@ -1,0 +1,38 @@
+
+#circle {
+
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    float: left;
+    border-radius: 50%;
+    background-color: blue;
+    display: none;
+
+
+}
+
+#square {
+
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    float: left;
+    background-color: green;
+    display: none;
+}
+
+#game-space {
+
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+
+}
+
+.bold {
+
+    font-weight: bold;
+
+}
+    
